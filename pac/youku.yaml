@@ -14,26 +14,11 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: CN2
-    type: ss
-    server: hk.gzhpxb.com
-    port: 51490
-    cipher: aes-128-gcm
-    password: yangchaoyue
-    udp: true
-    skip-cert-verify: true
-
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
        - China Unicom
-
-  - name: BOOSTER
-    type: select
-    proxies:
-       - DIRECT
-       - CN2
 
 rules:
   - DOMAIN-SUFFIX,cache.video.iqiyi.com,PROXY
@@ -49,5 +34,4 @@ rules:
   - DOMAIN-SUFFIX,complexsearch.kugou.com,PROXY
   - DOMAIN-SUFFIX,ip.kugou.com,PROXY
   - IP-CIDR,47.91.203.0/24,PROXY
-  - GEOIP,CN,BOOSTER
   - MATCH,DIRECT
