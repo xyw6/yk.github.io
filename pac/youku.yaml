@@ -5,12 +5,13 @@ mode: Rule
 log-level: silent
 
 proxies:
-  - name: China Unicom
-    type: ss
-    server: cn.gzhpxb.com
+  - name: CN2
+    type: vmess
+    server: cn2.gzhpxb.com
     port: 51490
-    cipher: aes-128-gcm
-    password: yangchaoyue
+    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
+    alterId: 32
+    cipher: auto
     udp: true
     skip-cert-verify: true
 
@@ -18,7 +19,13 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-       - China Unicom
+       - CN2
+
+  - name: BOOSTER
+    type: select
+    proxies:
+       - DIRECT   
+       - CN2
 
 rules:
   - DOMAIN-SUFFIX,cache.video.iqiyi.com,PROXY
@@ -34,4 +41,5 @@ rules:
   - DOMAIN-SUFFIX,complexsearch.kugou.com,PROXY
   - DOMAIN-SUFFIX,ip.kugou.com,PROXY
   - IP-CIDR,47.91.203.0/24,PROXY
+  - GEOIP,CN,BOOSTER
   - MATCH,DIRECT
