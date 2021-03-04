@@ -15,11 +15,22 @@ proxies:
     udp: true
     skip-cert-verify: true
 
+  - name: CN2
+    type: vmess
+    server: 169.gzhpxb.com
+    port: 51490
+    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
+    alterId: 32
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
        - China Unicom
+       - CN2
 
 rules:
   - DOMAIN-SUFFIX,cache.video.iqiyi.com,PROXY
