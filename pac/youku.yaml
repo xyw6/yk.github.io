@@ -5,9 +5,9 @@ mode: Rule
 log-level: silent
 
 proxies:
-  - name: CN2
+  - name: China Unicom
     type: vmess
-    server: cn2.gzhpxb.com
+    server: 169.gzhpxb.com
     port: 51490
     uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
     alterId: 32
@@ -19,13 +19,7 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-       - CN2
-
-  - name: BOOSTER
-    type: select
-    proxies:
-       - DIRECT   
-       - CN2
+       - China Unicom
 
 rules:
   - DOMAIN-SUFFIX,cache.video.iqiyi.com,PROXY
@@ -41,5 +35,4 @@ rules:
   - DOMAIN-SUFFIX,complexsearch.kugou.com,PROXY
   - DOMAIN-SUFFIX,ip.kugou.com,PROXY
   - IP-CIDR,47.91.203.0/24,PROXY
-  - GEOIP,CN,BOOSTER
   - MATCH,DIRECT
