@@ -26,24 +26,31 @@ proxies:
     skip-cert-verify: true
 
 proxy-groups:
-  - name: PROXY
+  - name: Proxy
     type: select
     proxies:
        - China Unicom
        - CN2
 
+  - name: Booster
+    type: select
+    proxies:
+       - DIRECT
+       - Proxy
+
 rules:
-  - DOMAIN-SUFFIX,cache.video.iqiyi.com,PROXY
-  - DOMAIN-SUFFIX,l.qq.com,PROXY
-  - DOMAIN-SUFFIX,video.qq.com,PROXY
-  - DOMAIN-SUFFIX,api.bilibili.com,PROXY
-  - DOMAIN-SUFFIX,www.bilibili.com,PROXY
-  - DOMAIN-SUFFIX,api.mgtv.com,PROXY
-  - DOMAIN-SUFFIX,music.163.com,PROXY
-  - DOMAIN-SUFFIX,y.qq.com,PROXY
-  - DOMAIN-SUFFIX,gateway.kugou.com,PROXY
-  - DOMAIN-SUFFIX,mips.kugou.com,PROXY
-  - DOMAIN-SUFFIX,complexsearch.kugou.com,PROXY
-  - DOMAIN-SUFFIX,ip.kugou.com,PROXY
-  - IP-CIDR,47.91.203.0/24,PROXY
+  - DOMAIN-SUFFIX,cache.video.iqiyi.com,Proxy
+  - DOMAIN-SUFFIX,l.qq.com,Proxy
+  - DOMAIN-SUFFIX,video.qq.com,Proxy
+  - DOMAIN-SUFFIX,api.bilibili.com,Proxy
+  - DOMAIN-SUFFIX,www.bilibili.com,Proxy
+  - DOMAIN-SUFFIX,api.mgtv.com,Proxy
+  - DOMAIN-SUFFIX,music.163.com,Proxy
+  - DOMAIN-SUFFIX,y.qq.com,Proxy
+  - DOMAIN-SUFFIX,gateway.kugou.com,Proxy
+  - DOMAIN-SUFFIX,mips.kugou.com,Proxy
+  - DOMAIN-SUFFIX,complexsearch.kugou.com,Proxy
+  - DOMAIN-SUFFIX,ip.kugou.com,Proxy
+  - IP-CIDR,47.91.203.0/24,Proxy
+  - GEOIP,CN,Booster
   - MATCH,DIRECT
