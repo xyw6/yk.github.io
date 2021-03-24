@@ -18,7 +18,7 @@ proxies:
   - name: CN2
     type: vmess
     server: cn2.gzhpxb.com
-    port: 51490
+    port: 51491
     uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
     alterId: 32
     cipher: auto
