@@ -27,7 +27,7 @@ proxies:
 
   - name: Unblock
     type: ss
-    server: sg.gzhpxb.com
+    server: p.gzhpxb.com
     port: 49101
     cipher: aes-128-gcm
     password: gogogogo
