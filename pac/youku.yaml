@@ -30,7 +30,7 @@ proxies:
     server: p.gzhpxb.com
     port: 49101
     cipher: aes-128-gcm
-    password: gogogogo
+    password: yangchaoyue
     udp: true
     skip-cert-verify: true
 
