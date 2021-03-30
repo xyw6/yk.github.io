@@ -17,8 +17,8 @@ proxies:
 
   - name: CN2
     type: vmess
-    server: cn2.shanghai.uovz.com
-    port: 51491
+    server: cn22.uovz.com
+    port: 10140
     uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
     alterId: 32
     cipher: auto
