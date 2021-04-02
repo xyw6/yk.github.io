@@ -1,0 +1,28 @@
+                {
+                    "type": "field",
+                    "domain": ["ext:h2y.dat:ad"],
+                    "outboundTag": "BLOCK"
+                },
+                {
+                    "type": "field",
+                    "source": ["geoip:cn"],
+                    "domain": [
+                      "domain:cn",
+                      "domain:baidu.com",
+                      "domain:qq.com",
+                      "domain:qcloud.com",
+                      "domain:163.com",
+                      "domain:taobao.com",
+                      "domain:youku.com",
+                      "domain:bilibili.com",
+                      "domain:zhihu.com",
+                      "domain:iqiyi.com",
+                      "domain:youdao.com",
+                      "domain:douban.com",
+                      "domain:wps.com",
+                      "domain:sogou.com",
+                      "domain:icloud.com",
+                      "domain:microsoft.com"
+                    ],
+                    "outboundTag": "BLOCK"
+                }
