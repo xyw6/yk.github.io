@@ -61,7 +61,6 @@ rules:
   - DOMAIN-SUFFIX,xvideos-cdn.com,Porn
   - DOMAIN-SUFFIX,jable.tv,Porn
   - DOMAIN-SUFFIX,av01.tv,Porn
-  - IP-CIDR,47.91.203.0/24,Porn
   - DOMAIN-SUFFIX,google-analytics.com,REJECT
   - DOMAIN-SUFFIX,googlesyndication.com,REJECT
   - DOMAIN-SUFFIX,doubleclick.net,REJECT
@@ -83,5 +82,6 @@ rules:
   - DOMAIN-SUFFIX,liadm.com,REJECT
   - DOMAIN-SUFFIX,agkn.com,REJECT
   - DOMAIN-KEYWORD,adservice,REJECT
+  - IP-CIDR,47.91.203.0/24,Proxy
   - GEOIP,CN,Booster
   - MATCH,DIRECT
