@@ -62,5 +62,26 @@ rules:
   - DOMAIN-SUFFIX,jable.tv,Porn
   - DOMAIN-SUFFIX,av01.tv,Porn
   - IP-CIDR,47.91.203.0/24,Porn
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,DIRECT
+  - DOMAIN-KEYWORD,adsystem,REJECT
+  - DOMAIN-SUFFIX,criteo.com,REJECT
+  - DOMAIN-SUFFIX,taboola.com,REJECT
+  - DOMAIN-SUFFIX,bttrack.com,REJECT
+  - DOMAIN-SUFFIX,onaudience.com,REJECT
+  - DOMAIN-SUFFIX,smartadserver.com,REJECT
+  - DOMAIN-SUFFIX,bidswitch.net,REJECT
+  - DOMAIN-SUFFIX,mfadsrvr.com,REJECT
+  - DOMAIN-SUFFIX,parsely.com,REJECT
+  - DOMAIN-SUFFIX,adnxs.com,REJECT
+  - DOMAIN-SUFFIX,addthis.com,REJECT
+  - DOMAIN-KEYWORD,advertising,REJECT
+  - DOMAIN-SUFFIX,irs01.com,REJECT
+  - DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
+  - DOMAIN-SUFFIX,liadm.com,REJECT
+  - DOMAIN-SUFFIX,agkn.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
   - GEOIP,CN,Booster
   - MATCH,DIRECT
