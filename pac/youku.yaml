@@ -64,7 +64,6 @@ rules:
   - DOMAIN-SUFFIX,google-analytics.com,REJECT
   - DOMAIN-SUFFIX,googlesyndication.com,REJECT
   - DOMAIN-SUFFIX,doubleclick.net,REJECT
-  - DOMAIN-SUFFIX,googleadservices.com,DIRECT
   - DOMAIN-KEYWORD,adsystem,REJECT
   - DOMAIN-SUFFIX,criteo.com,REJECT
   - DOMAIN-SUFFIX,taboola.com,REJECT
