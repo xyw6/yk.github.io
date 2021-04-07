@@ -38,13 +38,8 @@ proxy-groups:
   - name: Proxy
     type: select
     proxies:
-       - China Unicom
-
-  - name: Booster
-    type: select
-    proxies:
-       - DIRECT
        - CN2
+       - China Unicom
 
   - name: Porn
     type: select
