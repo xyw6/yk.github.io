@@ -5,10 +5,20 @@ mode: Rule
 log-level: silent
 
 proxies:
+  - name: China Unicom
+    type: vmess
+    server: 169.gzhpxb.com
+    port: 51490
+    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
+    alterId: 32
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+
   - name: CN2
     type: vmess
     server: cn2.gzhpxb.com
-    port: 10140
+    port: 10151
     uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
     alterId: 32
     cipher: auto
@@ -28,13 +38,13 @@ proxy-groups:
   - name: Proxy
     type: select
     proxies:
-       - CN2
+       - China Unicom
 
   - name: Booster
     type: select
     proxies:
        - DIRECT
-       - Proxy
+       - CN2
 
   - name: Porn
     type: select
