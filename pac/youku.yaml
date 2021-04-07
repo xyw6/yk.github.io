@@ -60,6 +60,7 @@ rules:
   - DOMAIN-SUFFIX,xvideos.com,Porn
   - DOMAIN-SUFFIX,xvideos-cdn.com,Porn
   - DOMAIN-SUFFIX,jable.tv,Porn
+  - DOMAIN-SUFFIX,cdnlab.live,Porn
   - DOMAIN-SUFFIX,av01.tv,Porn
   - DOMAIN-SUFFIX,google-analytics.com,REJECT
   - DOMAIN-SUFFIX,googlesyndication.com,REJECT
