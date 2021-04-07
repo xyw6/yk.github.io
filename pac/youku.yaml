@@ -88,5 +88,4 @@ rules:
   - DOMAIN-SUFFIX,agkn.com,REJECT
   - DOMAIN-KEYWORD,adservice,REJECT
   - IP-CIDR,47.91.203.0/24,Proxy
-  - GEOIP,CN,Booster
   - MATCH,DIRECT
