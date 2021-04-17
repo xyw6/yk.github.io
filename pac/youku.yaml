@@ -15,16 +15,6 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: CN2
-    type: vmess
-    server: cn2.gzhpxb.com
-    port: 10151
-    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
-    alterId: 32
-    cipher: auto
-    udp: true
-    skip-cert-verify: true
-
   - name: Unblock
     type: ss
     server: p.gzhpxb.com
@@ -35,10 +25,10 @@ proxies:
     skip-cert-verify: true
 
 proxy-groups:
-  - name: Proxy
+  - name: YouKu
     type: select
     proxies:
-       - CN2
+       - Unblock
        - China Unicom
 
   - name: Porn
@@ -48,18 +38,18 @@ proxy-groups:
        - Unblock
        
 rules:
-  - DOMAIN-SUFFIX,cache.video.iqiyi.com,Proxy
-  - DOMAIN-SUFFIX,l.qq.com,Proxy
-  - DOMAIN-SUFFIX,video.qq.com,Proxy
-  - DOMAIN-SUFFIX,api.bilibili.com,Proxy
-  - DOMAIN-SUFFIX,www.bilibili.com,Proxy
-  - DOMAIN-SUFFIX,api.mgtv.com,Proxy
-  - DOMAIN-SUFFIX,music.163.com,Proxy
-  - DOMAIN-SUFFIX,y.qq.com,Proxy
-  - DOMAIN-SUFFIX,gateway.kugou.com,Proxy
-  - DOMAIN-SUFFIX,mips.kugou.com,Proxy
-  - DOMAIN-SUFFIX,complexsearch.kugou.com,Proxy
-  - DOMAIN-SUFFIX,ip.kugou.com,Proxy
+  - DOMAIN-SUFFIX,cache.video.iqiyi.com,YouKu
+  - DOMAIN-SUFFIX,l.qq.com,YouKu
+  - DOMAIN-SUFFIX,video.qq.com,YouKu
+  - DOMAIN-SUFFIX,api.bilibili.com,YouKu
+  - DOMAIN-SUFFIX,www.bilibili.com,YouKu
+  - DOMAIN-SUFFIX,api.mgtv.com,YouKu
+  - DOMAIN-SUFFIX,music.163.com,YouKu
+  - DOMAIN-SUFFIX,y.qq.com,YouKu
+  - DOMAIN-SUFFIX,gateway.kugou.com,YouKu
+  - DOMAIN-SUFFIX,mips.kugou.com,YouKu
+  - DOMAIN-SUFFIX,complexsearch.kugou.com,YouKu
+  - DOMAIN-SUFFIX,ip.kugou.com,YouKu
   - DOMAIN-SUFFIX,pornhub.com,Porn
   - DOMAIN-SUFFIX,phncdn.com,Porn
   - DOMAIN-SUFFIX,xvideos.com,Porn
@@ -87,5 +77,5 @@ rules:
   - DOMAIN-SUFFIX,liadm.com,REJECT
   - DOMAIN-SUFFIX,agkn.com,REJECT
   - DOMAIN-KEYWORD,adservice,REJECT
-  - IP-CIDR,47.91.203.0/24,Proxy
+  - IP-CIDR,47.91.203.0/24,YouKu
   - MATCH,DIRECT
