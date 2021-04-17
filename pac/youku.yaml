@@ -5,16 +5,6 @@ mode: Rule
 log-level: silent
 
 proxies:
-  - name: China Unicom
-    type: vmess
-    server: 169.gzhpxb.com
-    port: 51490
-    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
-    alterId: 32
-    cipher: auto
-    udp: true
-    skip-cert-verify: true
-
   - name: Unblock
     type: ss
     server: p.gzhpxb.com
@@ -24,12 +14,21 @@ proxies:
     udp: true
     skip-cert-verify: true
 
+  - name: Reserved
+    type: vmess
+    server: 169.gzhpxb.com
+    port: 51490
+    uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
+    alterId: 32
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+
 proxy-groups:
   - name: YouKu
     type: select
     proxies:
        - Unblock
-       - China Unicom
 
   - name: Porn
     type: select
