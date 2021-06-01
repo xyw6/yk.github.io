@@ -1,0 +1,153 @@
+{
+	"log": {
+		"access": "",
+		"error": "",
+		"loglevel": "warning"
+	},
+	"inbounds": [
+		{
+			"port": 51490,
+			"protocol": "vmess",
+			"settings": {
+				"clients": [
+					{
+					"id": "3f0c07bf-80a5-4fbb-937e-046a6d190319",
+					"alterId": 32
+					}
+				]
+			},
+            "tag": "China"
+		},
+        {
+            "port": 51491,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                    "id": "3f0c07bf-80a5-4fbb-937e-046a6d190319",
+                    "alterId": 32
+                    }
+                ]
+            }
+        }
+	],
+	"outbounds": [
+		{
+			"protocol": "freedom",
+			"settings": {
+				"domainStrategy": "UseIP"
+			},
+			"tag": "DIRECT"
+		},
+    {
+      "tag": "PROXY",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sg.gzhpxb.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3f0c07bf-80a5-4fbb-937e-046a6d190319",
+                "alterId": 233,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "sg.gzhpxb.com"
+        },
+        "wsSettings": {
+          "path": "/xyw",
+          "headers": {
+            "Host": "sg.gzhpxb.com"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+		{
+			"protocol": "blackhole",
+			"settings": {},
+			"tag": "BLOCK"
+		}
+	],
+	"routing": {
+		"domainStrategy": "IPOnDemand",
+		"rules": [
+			{
+				"type": "field",
+				"outboundTag": "BLOCK",
+				"domain": ["ext:h2y.dat:ad"]
+			},
+			{
+				"type": "field",
+				"inboundTag": "China",
+				"outboundTag": "BLOCK",
+				"domain": ["geosite:cn"],
+				"ip": ["geoip:cn"]
+			},
+            {
+                "type": "field",
+                "outboundTag": "DIRECT",
+                "domain": [
+                      "domain:github.com",
+                      "domain:amazonaws.com",
+                      "domain:amazon.com",
+                      "domain:cloudfront.net"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "PROXY",
+                "domain": [
+                      "ext:h2y.dat:gfw",
+                      "domain:fb.watch",
+                      "domain:wikimedia.org",
+                      "domain:zoom.us",
+                      "domain:joinclubhouse.com",
+                      "domain:clubhouseapi.com",
+                      "domain:yahoo.com",
+                      "domain:jable.tv"
+                      "domain:av01.tv"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "PROXY",
+                "ip": [
+                      "67.198.55.0/24",
+                      "91.108.4.0/22",
+                      "91.108.8.0/22",
+                      "91.108.12.0/22",
+                      "91.108.16.0/22",
+                      "91.108.56.0/22",
+                      "109.239.140.0/24",
+                      "149.154.160.0/20",
+                      "149.154.164.0/22",
+                      "149.154.168.0/22",
+                      "149.154.172.0/22",
+                      "109.239.140.0/24"
+                ]
+            }
+		]
+	},
+	"transport": {
+		"kcpSettings": {
+			"uplinkCapacity": 100,
+			"downlinkCapacity": 100,
+			"congestion": true
+		}
+	}
+}
