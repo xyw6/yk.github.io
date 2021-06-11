@@ -14,13 +14,22 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: Reserved
+  - name: 福建CN2
     type: vmess
-    server: 169.gzhpxb.com
-    port: 51490
+    server: cn2.gzhpxb.com
+    port: 10147
     uuid: 3f0c07bf-80a5-4fbb-937e-046a6d190319
     alterId: 32
     cipher: auto
+    udp: true
+    skip-cert-verify: true
+
+  - name: 广东移动
+    type: ss
+    server: cm.gzhpxb.com
+    port: 49101
+    cipher: aes-128-gcm
+    password: yangchaoyue
     udp: true
     skip-cert-verify: true
 
@@ -28,7 +37,8 @@ proxy-groups:
   - name: YouKu
     type: select
     proxies:
-       - Unblock
+       - 福建CN2
+       - 广东移动
 
   - name: Porn
     type: select
