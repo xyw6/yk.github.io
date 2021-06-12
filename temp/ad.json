@@ -21,8 +21,11 @@
                       "domain:douban.com",
                       "domain:wps.com",
                       "domain:sogou.com",
-                      "domain:icloud.com",
-                      "domain:microsoft.com"
+                      "domain:snssdk.com",
+                      "domain:ixigua.com",
+                      "domain:pstatp.com",
+                      "domain:toutiao.com",
+                      "domain:pptv.com"
                     ],
                     "outboundTag": "BLOCK"
                 }
