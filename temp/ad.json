@@ -28,4 +28,10 @@
                       "domain:pptv.com"
                     ],
                     "outboundTag": "BLOCK"
+                },
+                {
+                    "type": "field",
+                    "source": ["geoip:cn"],
+                    "ip": ["geoip:cn"],
+                    "outboundTag": "BLOCK"
                 }
