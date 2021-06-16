@@ -64,8 +64,10 @@ rules:
   - DOMAIN-SUFFIX,xvideos.com,Porn
   - DOMAIN-SUFFIX,xvideos-cdn.com,Porn
   - DOMAIN-SUFFIX,jable.tv,Porn
-  - DOMAIN-SUFFIX,cdnlab.live,Porn
+  - DOMAIN-SUFFIX,theporndude.com,Porn
   - DOMAIN-SUFFIX,av01.tv,Porn
+  - DOMAIN-SUFFIX,papalah.com,Porn
+  - DOMAIN-SUFFIX,theav.xyz,Porn
   - DOMAIN-SUFFIX,google-analytics.com,REJECT
   - DOMAIN-SUFFIX,googlesyndication.com,REJECT
   - DOMAIN-SUFFIX,doubleclick.net,REJECT
