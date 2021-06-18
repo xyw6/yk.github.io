@@ -1,0 +1,25 @@
+ body {font-family: Arial, Helvetica, sans-serif;}
+ table{border-collapse:collapse;} td{padding:5px;}
+ table,th,td{border: 1px solid black;}
+
+/* https://www.w3schools.com/html/html_css.asp
+ 0. Browser default
+ 1. *.css files (with no HTML tags ! ) linked in header:
+    <link rel="stylesheet" type="text/css" href="styles.css">
+ 2. In header style:  <style> declarations </style>
+ 3. In body (inline): <h1 style="declaration;">Header Text</h1>
+ The last read applicable command rules.
+
+ COMMANDS: selectors {declarations}
+ DECLARATIONS: property:value; property:value; 
+ SELECTORS: element.class, .class, element, #id
+ (E.G.: CLASS(ES) IN ELEMENTS: <p class="center large">)
+
+ OPACITY: rgba(red, green, blue, alpha)
+ HUE/SATURATION/LIGHTNESS/ALPHA E.G.:  hsl(360, 100%, 100%, 1)
+
+ COLOR IMAGE REPEAT ATTACHMENT POSITION:
+ background: #ffffff url("img_tree.png") no-repeat right top;
+ WIDTH STYLE(REQUIRED) COLOR: border: 5px solid red; border-radius: 5px;
+
+ */
