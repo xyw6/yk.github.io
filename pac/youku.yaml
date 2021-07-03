@@ -14,7 +14,7 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: 广东移动
+  - name: CMNET-GD
     type: ss
     server: cm.gzhpxb.com
     port: 49101
@@ -27,7 +27,7 @@ proxy-groups:
   - name: YouKu
     type: select
     proxies:
-       - 广东移动
+       - CMNET-GD
 
   - name: Porn
     type: select
