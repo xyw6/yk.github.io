@@ -57,6 +57,7 @@ rules:
   - DOMAIN-SUFFIX,av01.tv,Porn
   - DOMAIN-SUFFIX,papalah.com,Porn
   - DOMAIN-SUFFIX,theav.xyz,Porn
+  - DOMAIN-SUFFIX,googleadservices.com,DIRECT
   - DOMAIN-SUFFIX,google-analytics.com,REJECT
   - DOMAIN-SUFFIX,googlesyndication.com,REJECT
   - DOMAIN-SUFFIX,doubleclick.net,REJECT
