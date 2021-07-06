@@ -37,7 +37,9 @@
                       "domain:pstatp.com",
                       "domain:toutiao.com",
                       "domain:pptv.com",
-                      "domain:cdn-apple.com"
+                      "domain:cdn-apple.com",
+                      "domain:dianping.com",
+                      "domain:meituan.com"
                     ],
                     "outboundTag": "BLOCK"
                 }
