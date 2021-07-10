@@ -29,6 +29,12 @@ proxy-groups:
     proxies:
        - CMNET-GD
 
+  - name: Booster
+    type: select
+    proxies:
+       - DIRECT
+       - CMNET-GD
+
   - name: Porn
     type: select
     proxies:
@@ -79,4 +85,5 @@ rules:
   - DOMAIN-SUFFIX,agkn.com,REJECT
   - DOMAIN-KEYWORD,adservice,REJECT
   - IP-CIDR,47.91.203.0/24,YouKu
+  - GEOIP,CN,Booster
   - MATCH,DIRECT
