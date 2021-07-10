@@ -81,6 +81,7 @@ rules:
   - DOMAIN-SUFFIX,addthis.com,REJECT
   - DOMAIN-KEYWORD,advertising,REJECT
   - DOMAIN-SUFFIX,irs01.com,REJECT
+  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
   - DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
   - DOMAIN-SUFFIX,liadm.com,REJECT
   - DOMAIN-SUFFIX,agkn.com,REJECT
