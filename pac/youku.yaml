@@ -28,6 +28,7 @@ proxy-groups:
     type: select
     proxies:
        - CMNET-GD
+       - DIRECT
 
   - name: Booster
     type: select
