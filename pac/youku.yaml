@@ -23,6 +23,15 @@ proxies:
     udp: true
     skip-cert-verify: true
 
+  - name: CMI-HK
+    type: ss
+    server: hk.gzhpxb.com
+    port: 51490
+    cipher: aes-128-gcm
+    password: yangchaoyue
+    udp: true
+    skip-cert-verify: true
+
 proxy-groups:
   - name: YouKu
     type: select
@@ -34,7 +43,7 @@ proxy-groups:
     type: select
     proxies:
        - DIRECT
-       - CMNET-GD
+       - CMI-HK
 
   - name: Porn
     type: select
