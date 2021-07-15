@@ -16,8 +16,8 @@ proxies:
 
   - name: CMNET-GD
     type: ss
-    server: cm.gzhpxb.com
-    port: 49101
+    server: he.gzhpxb.com
+    port: 51490
     cipher: aes-128-gcm
     password: yangchaoyue
     udp: true
