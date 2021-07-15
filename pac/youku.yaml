@@ -54,6 +54,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,cache.video.iqiyi.com,YouKu
   - DOMAIN-SUFFIX,l.qq.com,YouKu
+  - DOMAIN-SUFFIX,btrace.video.qq.com,REJECT
   - DOMAIN-SUFFIX,video.qq.com,YouKu
   - DOMAIN-SUFFIX,api.bilibili.com,YouKu
   - DOMAIN-SUFFIX,www.bilibili.com,YouKu
