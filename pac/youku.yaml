@@ -23,6 +23,15 @@ proxies:
     udp: true
     skip-cert-verify: true
 
+  - name: CN2
+    type: ss
+    server: cn2.gzhpxb.com
+    port: 51490
+    cipher: aes-128-gcm
+    password: yangchaoyue
+    udp: true
+    skip-cert-verify: true
+
   - name: CMI-HK
     type: ss
     server: hk.gzhpxb.com
@@ -37,6 +46,7 @@ proxy-groups:
     type: select
     proxies:
        - CMNET-GD
+       - CN2
        - DIRECT
 
   - name: Booster
